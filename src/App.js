@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import TopBar from "./components/TopBar";
+import TimerBar from "./components/TimerBar";
+import Hero from "./components/Hero";
+import ForYouSection from "./components/ForYouSection";
+import TwoColumnSection from "./components/TwoColumnSection";
+import WhySection from "./components/WhySection";
+import BonosExclusivos from "./components/BonosExclusivos";
+import RegalosCompra from "./components/RegalosCompra";
+import BonusTallerGrabado from "./components/BonusTallerGrabado";
+import BonusClaseMetaAds from "./components/BonusClaseMetaAds";
+import PreguntasFrecuentes from "./components/PreguntasFrecuentes";
+import Footer from "./components/Footer"; // <--- importar el Footer
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <TopBar />
+      <TimerBar />
+      <Hero />
+      <ForYouSection />
+      <TwoColumnSection />
+      <WhySection />
+      <BonosExclusivos />
+      <RegalosCompra />
+      <BonusTallerGrabado />
+      <BonusClaseMetaAds />
+      <PreguntasFrecuentes />
+
+      {/* Footer al final */}
+      <Footer />
+    </>
   );
 }
 

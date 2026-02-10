@@ -1,0 +1,48 @@
+export default function TwoColumnSection() {
+  return (
+    <section className="bg-white py-12 md:py-20">
+      <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+        {/* Columna Izquierda */}
+        <div className="text-center md:text-left">
+          <h2 className="text-black font-extrabold leading-[1.5] text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+            La fórmula paso a paso para{" "}
+            <span className="text-green-500">lograr ventas</span>{" "}
+            <span className="text-orange-500">Hotmart</span>{" "}
+            <span className="text-green-500">en automático</span>
+          </h2>
+
+          {/* Imagen debajo del título */}
+          <div className="mt-6">
+            <img
+              src="/images/manuel-vendiendo.jpg"
+              alt="Manuel vendiendo su libro"
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+
+        {/* Columna Derecha */}
+        <div className="text-center md:text-left flex flex-col items-center md:items-center">
+          {/* Imagen de tiro al blanco más arriba */}
+          <div className="-mt-10 md:-mt-16">
+            <img
+              src="/images/tiro-al-blanco.png"
+              alt="Tiro al blanco"
+              className="w-48 md:w-64 h-auto"
+            />
+          </div>
+
+          {/* Texto debajo con saltos de línea */}
+          <p className="mt-4 text-black font-medium text-lg sm:text-xl md:text-4xl leading-[1.5] text-center md:text-center">
+            Este eBook es tu <br />
+            <strong>mapa para vender</strong> <br />
+            en <strong>piloto</strong> <br /> <strong> automatico</strong> tus{" "}
+            <br />
+            conocimientos, sin <br />
+            complicarte.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
