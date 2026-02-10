@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/manuelbook/static/css/main.59b3f1b7.css",
-    "main.js": "/manuelbook/static/js/main.1697c497.js",
+    "main.js": "/manuelbook/static/js/main.483f9b99.js",
     "static/js/453.ce598b26.chunk.js": "/manuelbook/static/js/453.ce598b26.chunk.js",
     "index.html": "/manuelbook/index.html",
     "main.59b3f1b7.css.map": "/manuelbook/static/css/main.59b3f1b7.css.map",
-    "main.1697c497.js.map": "/manuelbook/static/js/main.1697c497.js.map",
+    "main.483f9b99.js.map": "/manuelbook/static/js/main.483f9b99.js.map",
     "453.ce598b26.chunk.js.map": "/manuelbook/static/js/453.ce598b26.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.59b3f1b7.css",
-    "static/js/main.1697c497.js"
+    "static/js/main.483f9b99.js"
   ]
 }
