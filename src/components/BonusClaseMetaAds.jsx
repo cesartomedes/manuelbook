@@ -18,7 +18,7 @@ export default function BonusClaseMetaAds() {
           <div className="relative w-full aspect-video rounded-2xl shadow-xl overflow-hidden bg-gray-100">
             {/* Tu imagen va acá */}
             <img
-              src="/images/imagen19.png"
+              src={`${process.env.PUBLIC_URL}/images/imagen19.png`}
               alt="Clase Meta Ads"
               className="w-full h-full object-cover"
             />
