@@ -9,7 +9,8 @@ import RegalosCompra from "./components/RegalosCompra";
 import BonusTallerGrabado from "./components/BonusTallerGrabado";
 import BonusClaseMetaAds from "./components/BonusClaseMetaAds";
 import PreguntasFrecuentes from "./components/PreguntasFrecuentes";
-import Footer from "./components/Footer"; // <--- importar el Footer
+import SuperOferta from "./components/SuperOferta";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <RegalosCompra />
       <BonusTallerGrabado />
       <BonusClaseMetaAds />
+      <SuperOferta />
       <PreguntasFrecuentes />
 
       {/* Footer al final */}
