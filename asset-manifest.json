@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/manuelbook/static/css/main.8e056e8d.css",
+    "main.js": "/manuelbook/static/js/main.2c61e1d1.js",
+    "static/js/453.ce598b26.chunk.js": "/manuelbook/static/js/453.ce598b26.chunk.js",
+    "index.html": "/manuelbook/index.html",
+    "main.8e056e8d.css.map": "/manuelbook/static/css/main.8e056e8d.css.map",
+    "main.2c61e1d1.js.map": "/manuelbook/static/js/main.2c61e1d1.js.map",
+    "453.ce598b26.chunk.js.map": "/manuelbook/static/js/453.ce598b26.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8e056e8d.css",
+    "static/js/main.2c61e1d1.js"
+  ]
+}
