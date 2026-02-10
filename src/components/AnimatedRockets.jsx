@@ -12,7 +12,7 @@ export function AnimatedRockets() {
 function RocketAnimation({ left, delay, duration }) {
   return (
     <img
-      src="/images/rockets.gif" // icono pequeño de cohete
+      src={`${process.env.PUBLIC_URL}/images/rockets.gif`} // icono pequeño de cohete
       alt="Cohete"
       className={`absolute w-6 sm:w-8 animate-rocket`}
       style={{
