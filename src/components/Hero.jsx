@@ -49,7 +49,7 @@ export default function Hero() {
         <div className="mt-10 flex justify-center">
           <div className="w-full max-w-sm md:max-w-md rounded-xl overflow-hidden shadow-lg bg-gray-100">
             <img
-              src="/images/ebook-previews.jpeg"
+              src={`${process.env.PUBLIC_URL}/images/ebook-previews.jpeg`}
               alt="Vista previa del ebook"
               className="w-full h-auto"
             />
