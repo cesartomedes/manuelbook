@@ -14,7 +14,7 @@ export default function TwoColumnSection() {
           {/* Imagen debajo del título */}
           <div className="mt-6">
             <img
-              src="/images/manuel-vendiendo.jpg"
+              src={`${process.env.PUBLIC_URL}/images/manuel-vendiendo.jpg`}
               alt="Manuel vendiendo su libro"
               className="w-full h-auto rounded-lg shadow-lg"
             />
@@ -26,7 +26,7 @@ export default function TwoColumnSection() {
           {/* Imagen de tiro al blanco más arriba */}
           <div className="-mt-10 md:-mt-16">
             <img
-              src="/images/tiro-al-blanco.png"
+              src={`${process.env.PUBLIC_URL}/images/tiro-al-blanco.png`}
               alt="Tiro al blanco"
               className="w-48 md:w-64 h-auto"
             />
@@ -36,8 +36,7 @@ export default function TwoColumnSection() {
           <p className="mt-4 text-black font-medium text-lg sm:text-xl md:text-4xl leading-[1.5] text-center md:text-center">
             Este eBook es tu <br />
             <strong>mapa para vender</strong> <br />
-            en <strong>piloto</strong> <br /> <strong> automatico</strong> tus{" "}
-            <br />
+            en <strong>piloto</strong> <br /> <strong>automático</strong> tus <br />
             conocimientos, sin <br />
             complicarte.
           </p>

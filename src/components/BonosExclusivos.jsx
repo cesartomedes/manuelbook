@@ -9,15 +9,6 @@ export default function BonosExclusivos() {
 
   return (
     <>
-      {/* ===== STICKY BONUS BAR ===== */}
-      {/* <div className="fixed bottom-0 left-0 right-0 z-50 bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-500 shadow-2xl">
-        <div className="max-w-6xl mx-auto px-4 py-3 flex justify-center items-center">
-          <p className="font-extrabold text-black text-sm md:text-lg">
-            🎁 Accedé ahora y llevate <span className="text-white">3 BONOS EXCLUSIVOS</span>
-          </p>
-        </div>
-      </div> */}
-
       {/* ===== SECCIÓN PRINCIPAL ===== */}
       <section className="py-24 bg-white relative overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 text-center relative">
@@ -37,7 +28,7 @@ export default function BonosExclusivos() {
 
             {/* Regalo flotante izquierda */}
             <motion.img
-              src="/images/gift.png"
+              src={`${process.env.PUBLIC_URL}/images/gift.png`}
               alt="Regalo"
               animate={{ y: [0, -15, 0] }}
               transition={{ duration: 3, repeat: Infinity }}
@@ -46,7 +37,7 @@ export default function BonosExclusivos() {
 
             {/* Regalo flotante derecha */}
             <motion.img
-              src="/images/gift.png"
+              src={`${process.env.PUBLIC_URL}/images/gift.png`}
               alt="Regalo"
               animate={{ y: [0, 15, 0] }}
               transition={{ duration: 3.5, repeat: Infinity }}

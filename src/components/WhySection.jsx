@@ -26,7 +26,7 @@ export default function WhySection() {
           {/* Columna izquierda: tiro al blanco */}
           <div className="flex justify-center md:justify-start -mt-10 md:-mt-16">
             <img
-              src="/images/tiro-al-blanco.png"
+              src={`${process.env.PUBLIC_URL}/images/tiro-al-blanco.png`}
               alt="Tiro al blanco"
               className="w-48 md:w-64 h-auto"
             />

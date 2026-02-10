@@ -5,7 +5,9 @@ export default function ForYouSection() {
       {/* Fondo estático */}
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/images/rockets2.jpg')" }}
+        style={{
+          backgroundImage: `url(${process.env.PUBLIC_URL}/images/rockets2.jpg)`,
+        }}
       />
 
       {/* Overlay para mejorar contraste */}
