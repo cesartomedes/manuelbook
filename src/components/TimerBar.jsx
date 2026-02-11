@@ -1,16 +1,15 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 
 export default function TimerBar() {
   const HOURS = 20;
-  const DURATION = HOURS * 60 * 60 * 1000; // en milisegundos
+  const DURATION = HOURS * 60 * 60 * 1000;
   const STORAGE_KEY = "offer_end_time";
 
-  const getRemainingTime = () => {
+  const getRemainingTime = useCallback(() => {
     const now = new Date().getTime();
     let endTime = localStorage.getItem(STORAGE_KEY);
 
     if (!endTime) {
-      // Primera vez que entra
       endTime = now + DURATION;
       localStorage.setItem(STORAGE_KEY, endTime);
     }
@@ -18,14 +17,13 @@ export default function TimerBar() {
     const remaining = Math.floor((endTime - now) / 1000);
 
     if (remaining <= 0) {
-      // Reiniciar automáticamente cuando llegue a 0
       const newEndTime = now + DURATION;
       localStorage.setItem(STORAGE_KEY, newEndTime);
       return Math.floor(DURATION / 1000);
     }
 
     return remaining;
-  };
+  }, [DURATION]);
 
   const [timeLeft, setTimeLeft] = useState(getRemainingTime);
 
@@ -35,7 +33,7 @@ export default function TimerBar() {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [getRemainingTime]);
 
   const formatTime = (seconds) => {
     const h = String(Math.floor(seconds / 3600)).padStart(2, "0");
