@@ -14,7 +14,7 @@ export default function TwoColumnSection() {
           {/* Imagen debajo del título */}
           <div className="mt-6">
             <img
-              src={`${process.env.PUBLIC_URL}/images/manuel-vendiendo.jpg`}
+              src={`${process.env.PUBLIC_URL}/images/manuel.png`}
               alt="Manuel vendiendo su libro"
               className="w-full h-auto rounded-lg shadow-lg"
             />
@@ -22,9 +22,9 @@ export default function TwoColumnSection() {
         </div>
 
         {/* Columna Derecha */}
-        <div className="text-center md:text-left flex flex-col items-center md:items-center">
-          {/* Imagen de tiro al blanco más arriba */}
-          <div className="-mt-10 md:-mt-16">
+        <div className="flex flex-col items-center">
+          {/* Imagen de tiro al blanco centrada */}
+          <div className="flex justify-center -mt-10 md:-mt-16">
             <img
               src={`${process.env.PUBLIC_URL}/images/tiro-al-blanco.png`}
               alt="Tiro al blanco"
@@ -33,8 +33,8 @@ export default function TwoColumnSection() {
           </div>
 
           {/* Texto debajo con saltos de línea */}
-          <p className="mt-4 text-black font-medium text-lg sm:text-xl md:text-4xl leading-[1.5] text-center md:text-center">
-            Este eBook es tu <br />
+          <p className="mt-6 text-black font-medium text-lg sm:text-xl md:text-4xl leading-[1.5]">
+            Esta clase es tu <br />
             <strong>mapa para vender</strong> <br />
             en <strong>piloto</strong> <br /> <strong>automático</strong> tus <br />
             conocimientos, sin <br />

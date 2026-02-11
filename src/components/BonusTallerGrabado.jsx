@@ -5,7 +5,7 @@ export default function BonusTallerGrabado() {
 
         {/* TÍTULO PRINCIPAL */}
         <h2 className="font-extrabold text-4xl sm:text-5xl md:text-6xl leading-tight max-w-4xl">
-          Taller grabado{" "}
+          Clase de{" "}
           <span className="font-extrabold">
             Meta Ads + Hotmart:
           </span>{" "}
@@ -29,7 +29,7 @@ export default function BonusTallerGrabado() {
             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
               Mi objetivo es que aprendas{" "}
               <strong>sí o sí</strong>, y por eso incluyo en este
-              material un taller exclusivo con todo lo que tenés
+              material una clase exclusiva con todo lo que tenés
               que saber <strong>paso a paso</strong>.
             </p>
 
