@@ -36,7 +36,7 @@ export default function BonusTallerGrabado() {
             {/* PRECIO */}
             <div className="mt-8">
               <p className="text-3xl font-extrabold text-red-500 line-through">
-                $50 dólares
+                $100 USD
               </p>
               <p className="text-4xl md:text-5xl font-extrabold text-green-500 mt-2">
                 HOY GRATIS

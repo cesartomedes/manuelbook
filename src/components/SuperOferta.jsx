@@ -54,8 +54,8 @@ export default function SuperOferta() {
 
           {/* PRECIO */}
           <div className="mt-6">
-            <p className="text-gray-400 text-lg line-through">Precio habitual $300,00</p>
-            <p className="text-4xl sm:text-5xl font-extrabold text-green-500">$150,00</p>
+            <p className="text-gray-400 text-lg line-through">Precio habitual $300,00 USD</p>
+            <p className="text-4xl sm:text-5xl font-extrabold text-green-500">$150,00 USD</p>
             <p className="text-sm text-gray-500 mt-1">Precio de oferta por tiempo limitado</p>
           </div>
 
