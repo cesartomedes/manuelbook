@@ -26,6 +26,21 @@ export default function ForYouSection() {
         {/* LISTA */}
         <div className="mt-10 space-y-5">
           <CheckItem>
+            Estás cansada/o de cursos que dan vueltas y{" "}
+            <strong>querés una guía práctica, clara y directa</strong> que
+            puedas aplicar hoy mismo.
+          </CheckItem>
+          <CheckItem>
+            Sos emprendedora/emprendedor, hacés todo sola/o y{" "}
+            <strong>necesitás una forma simple de vender</strong> sin sumar más
+            tareas a tu rutina diaria.
+          </CheckItem>
+          <CheckItem>
+            Querés lanzar tu tienda digital, automatizar tus ventas y{" "}
+            <strong>vender tu ebook 24/7</strong> sin depender de Instagram o
+            WhatsApp.
+          </CheckItem>
+          <CheckItem>
             <strong>Tenés un ebook o querés crear uno</strong>, pero no sabés
             cómo venderlo ni por dónde empezar sin perder tiempo ni dinero.
           </CheckItem>
@@ -34,24 +49,6 @@ export default function ForYouSection() {
             Sentís que podrías{" "}
             <strong>generar ingresos con lo que sabés</strong>, pero la parte
             técnica te frena (tienda, pagos, automatización).
-          </CheckItem>
-
-          <CheckItem>
-            Sos emprendedora/emprendedor, hacés todo sola/o y{" "}
-            <strong>necesitás una forma simple de vender</strong> sin sumar más
-            tareas a tu rutina diaria.
-          </CheckItem>
-
-          <CheckItem>
-            Estás cansada/o de cursos que dan vueltas y{" "}
-            <strong>querés una guía práctica, clara y directa</strong> que
-            puedas aplicar hoy mismo.
-          </CheckItem>
-
-          <CheckItem>
-            Querés lanzar tu tienda digital, automatizar tus ventas y{" "}
-            <strong>vender tu ebook 24/7</strong> sin depender de Instagram o
-            WhatsApp.
           </CheckItem>
         </div>
       </div>

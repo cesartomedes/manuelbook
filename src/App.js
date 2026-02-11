@@ -11,6 +11,7 @@ import BonusClaseMetaAds from "./components/BonusClaseMetaAds";
 import PreguntasFrecuentes from "./components/PreguntasFrecuentes";
 import SuperOferta from "./components/SuperOferta";
 import Footer from "./components/Footer";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <BonusTallerGrabado />
       <BonusClaseMetaAds />
       <SuperOferta />
+      <Testimonials />
       <PreguntasFrecuentes />
 
       {/* Footer al final */}
