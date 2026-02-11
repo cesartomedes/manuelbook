@@ -14,7 +14,7 @@ export default function TwoColumnSection() {
           {/* Imagen debajo del título */}
           <div className="mt-6">
             <img
-              src={`${process.env.PUBLIC_URL}/images/manuel.png`}
+              src={`${process.env.PUBLIC_URL}/images/manuel.PNG`}
               alt="Manuel vendiendo su libro"
               className="w-full h-auto rounded-lg shadow-lg"
             />
@@ -36,7 +36,8 @@ export default function TwoColumnSection() {
           <p className="mt-6 text-black font-medium text-lg sm:text-xl md:text-4xl leading-[1.5]">
             Esta clase es tu <br />
             <strong>mapa para vender</strong> <br />
-            en <strong>piloto</strong> <br /> <strong>automático</strong> tus <br />
+            en <strong>piloto</strong> <br /> <strong>automático</strong> tus{" "}
+            <br />
             conocimientos, sin <br />
             complicarte.
           </p>
