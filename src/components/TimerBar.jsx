@@ -1,20 +1,37 @@
 import { useEffect, useState } from "react";
 
 export default function TimerBar() {
-  // 20 horas en segundos
-  const INITIAL_TIME = 20 * 60 * 60;
+  const HOURS = 20;
+  const DURATION = HOURS * 60 * 60 * 1000; // en milisegundos
+  const STORAGE_KEY = "offer_end_time";
 
-  const [timeLeft, setTimeLeft] = useState(INITIAL_TIME);
+  const getRemainingTime = () => {
+    const now = new Date().getTime();
+    let endTime = localStorage.getItem(STORAGE_KEY);
+
+    if (!endTime) {
+      // Primera vez que entra
+      endTime = now + DURATION;
+      localStorage.setItem(STORAGE_KEY, endTime);
+    }
+
+    const remaining = Math.floor((endTime - now) / 1000);
+
+    if (remaining <= 0) {
+      // Reiniciar automáticamente cuando llegue a 0
+      const newEndTime = now + DURATION;
+      localStorage.setItem(STORAGE_KEY, newEndTime);
+      return Math.floor(DURATION / 1000);
+    }
+
+    return remaining;
+  };
+
+  const [timeLeft, setTimeLeft] = useState(getRemainingTime);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setTimeLeft((prev) => {
-        if (prev <= 1) {
-          clearInterval(interval);
-          return 0;
-        }
-        return prev - 1;
-      });
+      setTimeLeft(getRemainingTime());
     }, 1000);
 
     return () => clearInterval(interval);
