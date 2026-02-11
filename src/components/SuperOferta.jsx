@@ -26,7 +26,7 @@ export default function SuperOferta() {
     }, 2000); // Cambia cada 2 segundos
 
     return () => clearInterval(interval);
-  }, []);
+  }, [numeros.length]);
 
   return (
     <section className="py-20 bg-gradient-to-b from-white to-gray-50">
