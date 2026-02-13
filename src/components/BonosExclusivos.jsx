@@ -56,7 +56,7 @@ export default function BonosExclusivos() {
 
           {/* Texto debajo */}
           <div className="mt-14">
-            <p className="text-xl md:text-2xl">Comprando el ebook accedés a</p>
+            <p className="text-xl md:text-2xl">Comprando el ebook accedes a</p>
             <p className="mt-2 text-2xl md:text-3xl font-extrabold">
               <span className="text-black">3 INCREÍBLES </span>
               <span className="text-orange-500">REGALOS 🎁</span>
