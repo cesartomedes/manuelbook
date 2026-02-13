@@ -3,11 +3,15 @@ export default function BonusClaseMetaAds() {
     <section className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         {/* TÍTULO */}
-        <h2 className="font-extrabold text-4xl sm:text-5xl md:text-6xl leading-tight max-w-5xl mx-auto md:mx-0">
-          Clase completa donde te enseño a hacer
-          <span className="block md:inline font-extrabold">
-            Campañas de venta en Meta Ads
-          </span>
+        <h2
+          className=" font-extrabold
+  text-3xl sm:text-4xl md:text-6xl
+  leading-[1.1]
+  max-w-none md:max-w-5xl
+  mx-auto md:mx-0"
+        >
+          Clase completa donde te enseño a hacer{" "}
+          <span className="font-extrabold">campañas de venta en Meta Ads</span>
         </h2>
 
         {/* CONTENIDO */}
