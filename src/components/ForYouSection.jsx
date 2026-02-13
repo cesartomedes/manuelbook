@@ -20,18 +20,18 @@ export default function ForYouSection() {
       <div className="relative z-10 max-w-5xl mx-auto px-4">
         {/* TÍTULO */}
         <h2 className="text-black font-extrabold text-center leading-tight text-[28px] sm:text-4xl md:text-5xl">
-          ESTO ES PARA VOS SI...
+          ESTO ES PARA TI SI...
         </h2>
 
         {/* LISTA */}
         <div className="mt-10 space-y-5">
           <CheckItem>
             Estás cansada/o de cursos que dan vueltas y{" "}
-            <strong>querés una guía práctica, clara y directa</strong> que
+            <strong>quieres una guía práctica, clara y directa</strong> que
             puedas aplicar hoy mismo.
           </CheckItem>
           <CheckItem>
-            Sos emprendedora/emprendedor, hacés todo sola/o y{" "}
+            Eres emprendedora/emprendedor, haces todo sola/o y{" "}
             <strong>necesitás una forma simple de vender</strong> sin sumar más
             tareas a tu rutina diaria.
           </CheckItem>
@@ -41,13 +41,13 @@ export default function ForYouSection() {
             WhatsApp.
           </CheckItem>
           <CheckItem>
-            <strong>Tenés un ebook o querés crear uno</strong>, pero no sabés
+            <strong>Tienes un ebook o querés crear uno</strong>, pero no sabés
             cómo venderlo ni por dónde empezar sin perder tiempo ni dinero.
           </CheckItem>
 
           <CheckItem>
-            Sentís que podrías{" "}
-            <strong>generar ingresos con lo que sabés</strong>, pero la parte
+            Sientes que podrías{" "}
+            <strong>generar ingresos con lo que sabes</strong>, pero la parte
             técnica te frena (tienda, pagos, automatización).
           </CheckItem>
         </div>

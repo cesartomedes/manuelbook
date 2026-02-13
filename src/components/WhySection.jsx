@@ -35,9 +35,9 @@ export default function WhySection() {
           {/* Columna derecha: título */}
           <div className="text-center md:text-left">
             <h2 className="text-black font-extrabold leading-[1.3] text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
-              ¿Por qué deberías tener <br />
-              <span>Vende tu Primer eBook en </span>
-              <span className="text-orange-500">Hotmart</span>
+              ¿Por qué deberías <br />
+              <span>Vender tu Primer eBook en </span>
+              <span className="text-orange-500">Hotmart?</span>
             </h2>
           </div>
         </div>

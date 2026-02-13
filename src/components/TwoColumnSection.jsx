@@ -6,8 +6,8 @@ export default function TwoColumnSection() {
         <div className="text-center md:text-left">
           <h2 className="text-black font-extrabold leading-[1.5] text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
             La fórmula paso a paso para{" "}
-            <span className="text-green-500">lograr ventas</span>{" "}
-            <span className="text-orange-500">Hotmart</span>{" "}
+            <span className="text-green-500">lograr Ventas</span>{" "}
+            <span className="text-orange-500">Hotmart **</span>{" "}
             <span className="text-green-500">en automático</span>
           </h2>
 

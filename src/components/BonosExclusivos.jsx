@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 
 export default function BonosExclusivos() {
   const bonuses = [
+    "Página Web de Venta para promocionar tu Ebook",
+    "Clase en Vivo con el Experto",
     "Plantilla lista para tu tienda digital",
     "Checklist paso a paso para lanzar sin errores",
     "Guía rápida para vender en Hotmart sin complicaciones",
@@ -12,12 +14,12 @@ export default function BonosExclusivos() {
       {/* ===== SECCIÓN PRINCIPAL ===== */}
       <section className="py-24 bg-white relative overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 text-center relative">
-
           {/* Placa dorada */}
-          <div className="relative mx-auto max-w-4xl rounded-3xl 
+          <div
+            className="relative mx-auto max-w-4xl rounded-3xl 
             bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-500 
-            px-10 py-16 shadow-[0_30px_80px_rgba(0,0,0,0.35)] overflow-hidden">
-
+            px-10 py-16 shadow-[0_30px_80px_rgba(0,0,0,0.35)] overflow-hidden"
+          >
             {/* Brillo tipo Apple */}
             <motion.div
               initial={{ x: "-100%" }}
@@ -54,9 +56,7 @@ export default function BonosExclusivos() {
 
           {/* Texto debajo */}
           <div className="mt-14">
-            <p className="text-xl md:text-2xl">
-              Comprando el ebook accedés a
-            </p>
+            <p className="text-xl md:text-2xl">Comprando el ebook accedés a</p>
             <p className="mt-2 text-2xl md:text-3xl font-extrabold">
               <span className="text-black">3 INCREÍBLES </span>
               <span className="text-orange-500">REGALOS 🎁</span>
@@ -81,7 +81,6 @@ export default function BonosExclusivos() {
               </motion.div>
             ))}
           </div>
-
         </div>
       </section>
     </>
