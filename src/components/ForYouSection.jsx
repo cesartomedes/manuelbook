@@ -36,12 +36,12 @@ export default function ForYouSection() {
             tareas a tu rutina diaria.
           </CheckItem>
           <CheckItem>
-            Querés lanzar tu tienda digital, automatizar tus ventas y{" "}
+            Quieres lanzar tu tienda digital, automatizar tus ventas y{" "}
             <strong>vender tu ebook 24/7</strong> sin depender de Instagram o
             WhatsApp.
           </CheckItem>
           <CheckItem>
-            <strong>Tienes un ebook o querés crear uno</strong>, pero no sabés
+            <strong>Tienes un ebook o quieres crear uno</strong>, pero no sabés
             cómo venderlo ni por dónde empezar sin perder tiempo ni dinero.
           </CheckItem>
 
