@@ -32,7 +32,7 @@ export default function ForYouSection() {
           </CheckItem>
           <CheckItem>
             Eres emprendedora/emprendedor, haces todo sola/o y{" "}
-            <strong>necesitás una forma simple de vender</strong> sin sumar más
+            <strong>necesitas una forma simple de vender</strong> sin sumar más
             tareas a tu rutina diaria.
           </CheckItem>
           <CheckItem>
