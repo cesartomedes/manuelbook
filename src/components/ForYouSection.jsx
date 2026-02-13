@@ -41,7 +41,7 @@ export default function ForYouSection() {
             WhatsApp.
           </CheckItem>
           <CheckItem>
-            <strong>Tienes un ebook o quieres crear uno</strong>, pero no sabés
+            <strong>Tienes un ebook o quieres crear uno</strong>, pero no sabes
             cómo venderlo ni por dónde empezar sin perder tiempo ni dinero.
           </CheckItem>
 
