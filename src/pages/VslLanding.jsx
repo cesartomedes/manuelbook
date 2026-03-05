@@ -67,7 +67,7 @@ export default function VslLanding() {
         <div className="w-full max-w-4xl relative">
           <video
             ref={videoRef}
-            src="/videos/manuel.mp4"
+            src={`${process.env.PUBLIC_URL}/videos/manuel.mp4`}
             className="w-full h-auto aspect-video rounded-2xl shadow-2xl"
             autoPlay
             muted
