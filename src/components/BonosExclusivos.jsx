@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 
 export default function BonosExclusivos() {
   const bonuses = [
-    "Página Web de Venta para promocionar tu Ebook",
-    "Clase en Vivo con el Experto",
+    
+    "Clases Pregrabadas para que las veas a tu propio ritmo de tiempo.",
     "Plantilla lista para tu tienda digital",
     "Checklist paso a paso para lanzar sin errores",
-    "Guía rápida para vender en Hotmart sin complicaciones",
+    "Guía rápida para vender con Meta Ads y WhatsApp sin complicaciones",
   ];
 
   return (

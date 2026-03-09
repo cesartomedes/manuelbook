@@ -33,12 +33,12 @@ export default function SuperOferta() {
         <div className="bg-white rounded-3xl shadow-2xl p-8 text-center relative">
           {/* BADGE SUPER OFERTA */}
           <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-red-500 text-white font-extrabold px-6 py-2 rounded-full text-sm shadow-lg animate-pulse">
-            🚀 Súper Oferta · 50% OFF
+            🚀 Súper Oferta · 80% OFF
           </div>
 
           {/* TÍTULO */}
           <h2 className="mt-6 font-extrabold text-3xl sm:text-4xl leading-tight">
-            Vende eBooks en <span className="text-red-500">Hotmart</span>
+            Vende eBooks con <span className="text-red-500">Meta Ads</span>
             <span className="block text-gray-900">
               La guía definitiva para vender todos los días
             </span>
@@ -56,7 +56,7 @@ export default function SuperOferta() {
               Precio habitual $300,00 USD
             </p>
             <p className="text-4xl sm:text-5xl font-extrabold text-green-500">
-              $150,00 USD
+              $6,00 USD
             </p>
             <p className="text-sm text-gray-500 mt-1">
               Precio de oferta por tiempo limitado

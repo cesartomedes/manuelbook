@@ -6,7 +6,7 @@ export default function RegalosCompra() {
       price: "$20 USD",
     },
     {
-      title: "Plantillas editables para crear tu página en Hotmart",
+      title: "Plantillas editables para crear tu Ebook en Canva fácil y rápido",
       description: "Diseños y textos listos para usar y adaptar",
       price: "$200 USD",
     },
@@ -55,10 +55,7 @@ export default function RegalosCompra() {
             </div>
           ))}
         </div>
-        
       </div>
-      
     </section>
-    
   );
 }
