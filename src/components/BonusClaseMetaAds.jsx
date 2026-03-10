@@ -18,14 +18,14 @@ export default function BonusClaseMetaAds() {
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* IMAGEN / VIDEO */}
           <div className="relative w-full aspect-video rounded-2xl shadow-xl overflow-hidden bg-gray-100">
-            {/* Tu imagen va acá */}
+        
             <img
               src={`${process.env.PUBLIC_URL}/images/Imagen19.png`}
               alt="Clase Meta Ads"
               className="w-full h-full object-cover"
             />
 
-            {/* Badge GRATIS */}
+          
             <div className="absolute bottom-4 right-4 bg-red-500 text-white font-extrabold px-5 py-3 rotate-6 shadow-lg text-lg">
               GRATIS
             </div>

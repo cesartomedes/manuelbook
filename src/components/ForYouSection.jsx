@@ -1,5 +1,92 @@
+// components/ForYouSection.jsx
+import { useState, useEffect } from 'react'
+import { client } from '../sanityClient'
 import { AnimatedRockets } from "./AnimatedRockets";
+
 export default function ForYouSection() {
+  const [data, setData] = useState(null)
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const result = await client.fetch(`
+          *[_type == "forYou"][0] {
+            titulo,
+            items[] {
+              texto
+            }
+          }
+        `)
+        setData(result)
+      } catch (error) {
+        console.error("Error fetching from Sanity:", error)
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    fetchData()
+  }, [])
+
+  // Si está cargando o no hay datos, muestra el contenido original
+  if (loading || !data) {
+    return (
+      <section className="relative w-full overflow-hidden py-12 md:py-20">
+        {/* Fondo estático */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `url(${process.env.PUBLIC_URL}/images/rockets2.jpg)`,
+          }}
+        />
+
+        {/* Overlay para mejorar contraste */}
+        <div className="absolute inset-0 bg-white/85" />
+
+        {/* Cohetes animados */}
+        <AnimatedRockets />
+
+        {/* Contenido */}
+        <div className="relative z-10 max-w-5xl mx-auto px-4">
+          {/* TÍTULO */}
+          <h2 className="text-black font-extrabold text-center leading-tight text-[28px] sm:text-4xl md:text-5xl">
+            ESTO ES PARA TI SI...
+          </h2>
+
+          {/* LISTA */}
+          <div className="mt-10 space-y-5">
+            <CheckItem>
+              Estás cansada/o de cursos que dan vueltas y{" "}
+              <strong>quieres una guía práctica, clara y directa</strong> que
+              puedas aplicar hoy mismo.
+            </CheckItem>
+            <CheckItem>
+              Eres emprendedora/emprendedor, haces todo sola/o y{" "}
+              <strong>necesitas una forma simple de vender</strong> sin sumar más
+              tareas a tu rutina diaria.
+            </CheckItem>
+            <CheckItem>
+              Quieres lanzar tu tienda digital, automatizar tus ventas y{" "}
+              <strong>vender tu ebook 24/7</strong> sin depender de Instagram o
+              WhatsApp.
+            </CheckItem>
+            <CheckItem>
+              <strong>Tienes un ebook o quieres crear uno</strong>, pero no sabes
+              cómo venderlo ni por dónde empezar sin perder tiempo ni dinero.
+            </CheckItem>
+            <CheckItem>
+              Sientes que podrías{" "}
+              <strong>generar ingresos con lo que sabes</strong>, pero la parte
+              técnica te frena (tienda, pagos, automatización).
+            </CheckItem>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  // Si hay datos de Sanity, los mostramos
   return (
     <section className="relative w-full overflow-hidden py-12 md:py-20">
       {/* Fondo estático */}
@@ -18,38 +105,49 @@ export default function ForYouSection() {
 
       {/* Contenido */}
       <div className="relative z-10 max-w-5xl mx-auto px-4">
-        {/* TÍTULO */}
+        {/* TÍTULO - Ahora editable desde Sanity */}
         <h2 className="text-black font-extrabold text-center leading-tight text-[28px] sm:text-4xl md:text-5xl">
-          ESTO ES PARA TI SI...
+          {data.titulo || "ESTO ES PARA TI SI..."}
         </h2>
 
-        {/* LISTA */}
+        {/* LISTA - Ahora editable desde Sanity */}
         <div className="mt-10 space-y-5">
-          <CheckItem>
-            Estás cansada/o de cursos que dan vueltas y{" "}
-            <strong>quieres una guía práctica, clara y directa</strong> que
-            puedas aplicar hoy mismo.
-          </CheckItem>
-          <CheckItem>
-            Eres emprendedora/emprendedor, haces todo sola/o y{" "}
-            <strong>necesitas una forma simple de vender</strong> sin sumar más
-            tareas a tu rutina diaria.
-          </CheckItem>
-          <CheckItem>
-            Quieres lanzar tu tienda digital, automatizar tus ventas y{" "}
-            <strong>vender tu ebook 24/7</strong> sin depender de Instagram o
-            WhatsApp.
-          </CheckItem>
-          <CheckItem>
-            <strong>Tienes un ebook o quieres crear uno</strong>, pero no sabes
-            cómo venderlo ni por dónde empezar sin perder tiempo ni dinero.
-          </CheckItem>
-
-          <CheckItem>
-            Sientes que podrías{" "}
-            <strong>generar ingresos con lo que sabes</strong>, pero la parte
-            técnica te frena (tienda, pagos, automatización).
-          </CheckItem>
+          {data.items && data.items.length > 0 ? (
+            data.items.map((item, index) => (
+              <CheckItem key={index}>
+                {/* Usamos dangerouslySetInnerHTML para respetar las negritas (<strong>) */}
+                <span dangerouslySetInnerHTML={{ __html: item.texto }} />
+              </CheckItem>
+            ))
+          ) : (
+            // Si no hay items en Sanity, mostramos los originales
+            <>
+              <CheckItem>
+                Estás cansada/o de cursos que dan vueltas y{" "}
+                <strong>quieres una guía práctica, clara y directa</strong> que
+                puedas aplicar hoy mismo.
+              </CheckItem>
+              <CheckItem>
+                Eres emprendedora/emprendedor, haces todo sola/o y{" "}
+                <strong>necesitas una forma simple de vender</strong> sin sumar más
+                tareas a tu rutina diaria.
+              </CheckItem>
+              <CheckItem>
+                Quieres lanzar tu tienda digital, automatizar tus ventas y{" "}
+                <strong>vender tu ebook 24/7</strong> sin depender de Instagram o
+                WhatsApp.
+              </CheckItem>
+              <CheckItem>
+                <strong>Tienes un ebook o quieres crear uno</strong>, pero no sabes
+                cómo venderlo ni por dónde empezar sin perder tiempo ni dinero.
+              </CheckItem>
+              <CheckItem>
+                Sientes que podrías{" "}
+                <strong>generar ingresos con lo que sabes</strong>, pero la parte
+                técnica te frena (tienda, pagos, automatización).
+              </CheckItem>
+            </>
+          )}
         </div>
       </div>
     </section>
